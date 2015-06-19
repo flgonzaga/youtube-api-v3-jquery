@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Youtube API V3 Request for Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="jquery.youtubev3.js"></script>
+        
+    </head>
+    <body>
+        
+        <div class="container">
+            
+            <div class="playerbox">
+            </div>
+
+            <div class="myplaylistvideos" >
+                <a href="/testvideo.html" class="ytubeid_class">
+                <img src="" alt="" class="ytubethumbnail_class" /><br /> 
+                <strong><span class="ytubetitle_class"></span></strong> <br />
+                <p class="ytubedescription_class"></p>
+                </a>
+                <span><small>Por: </small> <a href="" class="ytubechannel_class"></a></span>
+                <hr />
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            
+            $(document).ready(function() {
+                
+                $('.myplaylistvideos').Youtube('playlist', { 
+                    playlistTitle:'.ytubetitle_class', 
+                    playlistDescription:'.ytubedescription_class', 
+                    playlistThumbnail:'.ytubethumbnail_class', 
+                    playlistChannel:'.ytubechannel_class', 
+                    playlistVideoId:'.ytubeid_class'
+                });
+                
+                $('.playerbox').Youtube('player', {});
+                
+            });
+            
+        </script>
+    </body>
+</html>
