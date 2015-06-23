@@ -9,7 +9,7 @@
      * 
      */
     //DEBUG
-    //var apiKey = 'AIzaSyCujmEocriI7_vNS2zofPLeQ3cCyxQrbmo';
+    //var apiKey = '';
     //var playlistId = 'PL590L5WQmH8djDwF4JuHGEMUD4wNSIwlt';
     //var get_params = { key: apiKey, playlistId: playlistId, part: 'snippet', maxResults: limitItens };
     //var url = 'https://www.googleapis.com/youtube/v3/playlistItems?' + jQuery.param( get_params );
